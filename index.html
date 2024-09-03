@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <section class="tools-board">
+                <div class="row">
+                    <label class="title">Shapes</label>
+                    <ul class="options active">
+                        <li class="option tool" id="rectangle">
+                            <img src="/icons/icons/rectangle.svg" alt="rectangle">
+                            <span>Rectangle</span>
+                        </li>
+                        <li class="option tool" id="circle">
+                            <img src="/icons/icons/circle.svg" alt="circle">
+                            <span>Circle</span>
+                        </li>
+                        <li class="option tool" id="triangle">
+                            <img src="/icons/icons/triangle.svg" alt="triangle">
+                            <span>Triangle</span>
+                        </li>
+                        <li class="option tool" id="straightline">
+                            <img src="icons/icons/line.svg" alt="straightline">
+                            <span>Straight Line</span>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="fill-color">
+                            <label for="fill-color">Fill color</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <label class="title">Oprions</label>
+                    <ul class="options">
+                        <li class="option tool active" id="brush">
+                            <img src="/icons/icons/brush.svg" alt="brush">
+                            <span>Brush</span>
+                        </li>
+                        <li class="option tool" id="eraser">
+                            <img src="./icons/icons/eraser.svg" alt="eraser">
+                            <span>Eraser</span>
+                        </li>
+                        <li class="option">
+                            <input type="range" id="size-slider">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row colors">
+                    <label class="title">Colors</label>
+                    <ul class="options">
+                        <li class="option"></li>
+                        <li class="option"></li>
+                        <li class="option selected"></li>
+                        <li class="option"></li>
+                        <li class="option">
+                            <input type="color" id="colorPicker">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row buttons">
+                    <button class="clear-canvas">Clear Canvas</button>
+                    <button class="save-img">Save As Image</button>
+                    <button class="next-page" id="nextPage">Next Page</button>
+                    <button class="prev-page" id="prevPage">Prev Page</button>
+                </div>
+            </section>
+            <section class="draw-board">
+                <canvas></canvas>
+            </section>
+        </div>
+
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
